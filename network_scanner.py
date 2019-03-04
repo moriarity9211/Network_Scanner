@@ -4,6 +4,7 @@ try:
     import scapy.all as scapy
 except:
     os.system('pip3 install scapy')
+    import scapy.all as scapy
 def argument():
     parser = argparse.ArgumentParser(description="A simple Network scanner tool !")
     parser.add_argument('-t','--target',dest='target',help='Specify the IP address or range for scanning.')
